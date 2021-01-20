@@ -8,10 +8,11 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipesListComponent implements OnInit {
 
-  recipes: Recipe[] = [
-    new Recipe('Carbonara','Tipica Piatto di pasta italiana della città di Roma','https://wips.plug.it/cips/buonissimo.org/cms/2020/04/spaghetti-carbonara.jpg')
+  recipes:Recipe[] = [
+    new Recipe("Carbonara","Pasta con guanciale e via","https://cdn.pixabay.com/photo/2011/04/29/11/20/spaghetti-7113_960_720.jpg"),
+    new Recipe("Gnocchetti","Gnocchetti di Riso","https://www.tempi.it/wp-content/uploads/2020/01/xi-jinping-winnie-the-pooh.jpg"),
+    new Recipe("Cacio e Pepe","Pasta con il cacio e il pepe","https://upload.wikimedia.org/wikipedia/commons/e/ec/Spaghetti_cacio_e_pepe_%288602097091%29.jpg")
   ];
-
   constructor() { }
 
   ngOnInit(): void {
