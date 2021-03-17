@@ -121,5 +121,13 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "angular01"
 }
+=======
+  "defaultProject": "angular01",
+  "cli": {
+    "analytics": "9a33e261-fc2a-405b-9f95-af47c7ee5e1b"
+  }
+}
+>>>>>>> 66f7148062783d2c4cdaea7dfcbea865212194d8
