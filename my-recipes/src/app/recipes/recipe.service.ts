@@ -1,9 +1,9 @@
 import { EventEmitter } from '@angular/core';
-import {Recipe} from './recipe.model';
+import { Recipe } from './recipe.model';
 
+export class RecipeService {
 
-export class RecipeService{
-    recipeSelected = EventEmitter<Recipe>();
+    recipeSelected = new EventEmitter<Recipe>();
 
     private recipes: Recipe[] = [
         new Recipe('Carbonara', 'Tipica pasta con pancetta ecc..', 'https://images.fidhouse.com/fidelitynews/wp-content/uploads/sites/6/2018/01/1517219140_f055c0757a72a3a48b267d0878cf5344e3a3f6b1-1517074283.png?w=580'),
@@ -11,7 +11,8 @@ export class RecipeService{
         new Recipe('Lasagne', 'In Italia questo piatto assume diverse declinazioni...', 'https://www.ricette.com/wp-content/uploads/2013/12/lasagne-alla-bolognese.jpg')
     ];
 
-    getRecipes(){
-        return this.recipes.slice();//.slice senza argomento clone i dati
+    getRecipes() {
+        return this.recipes.slice();
     }
+
 }
