@@ -1,0 +1,14 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typecode" },
+      { "id": 2, "title": "php server programming", "author": "typecode" },
+      { "id": 3, "title": "angular", "author": "oscar" },
+      { "id": 4, "title": "php client side", "author": "typecode" },
+      { "id": 5, "title": "php server install", "author": "typecode" },
+      { "id": 6, "title": "php", "author": "typecode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
