@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -16,6 +16,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { DataStorageService } from './shared/data-storage.service';
+import { RecipeService } from './recipes/recipe.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { DataStorageService } from './shared/data-storage.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ShoppingListService,DataStorageService],
+  providers: [RecipeService,ShoppingListService, DataStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
