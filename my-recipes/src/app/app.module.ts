@@ -35,7 +35,7 @@ import { RecipeService } from './recipes/recipe.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [RecipeService,ShoppingListService, DataStorageService],
+  providers: [RecipeService, ShoppingListService, DataStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
