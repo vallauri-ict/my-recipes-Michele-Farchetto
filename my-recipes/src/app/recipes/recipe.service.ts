@@ -6,7 +6,7 @@ export class RecipeService {
 
   recipeSelected = new EventEmitter<Recipe>();
 
-  private recipes: Recipe[] = [
+  public recipes: Recipe[] = [
     new Recipe(
       'Carbonara',
       'Tipica pasta con pancetta ecc..',
@@ -25,7 +25,8 @@ export class RecipeService {
         new Ingredient("Pomodoro", 300)
       ]
     ),
-    new Recipe(
+    //ricetta commentata per provare il fetch data
+    /*new Recipe(
       'Lasagne',
       'In Italia questo piatto assume diverse declinazioni...',
       'https://www.ricette.com/wp-content/uploads/2013/12/lasagne-alla-bolognese.jpg',
@@ -33,7 +34,7 @@ export class RecipeService {
         new Ingredient("Sfoglia di pasta", 150),
         new Ingredient("Besciamella", 120)
       ]
-    )
+    )*/
   ];
 
   setRecipes(recipes: Recipe[]){
