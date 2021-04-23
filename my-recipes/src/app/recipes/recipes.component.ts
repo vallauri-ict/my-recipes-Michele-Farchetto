@@ -6,8 +6,6 @@ import { RecipeService } from './recipe.service';
   selector: 'app-recipes',
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css']
-  //va tolto se nova in conflitto con il richimo per il fetch data
-  //providers: [RecipeService]
 })
 export class RecipesComponent implements OnInit {
 
@@ -22,7 +20,5 @@ export class RecipesComponent implements OnInit {
       }
     )
   }
-
-
 
 }

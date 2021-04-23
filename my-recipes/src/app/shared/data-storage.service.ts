@@ -9,11 +9,11 @@ export class DataStorageService {
   constructor(private http: HttpClient, private recipeService: RecipeService) { }
 
   fetchRecipes() {
-    this.http.get<Recipe[]>("http://localhost:3000/recipes/") // to be completed...
-    .subscribe(recipes =>{
-      //console.log(recipes);
-      this.recipeService.setRecipes(recipes);
-    });
+    this.http.get<Recipe[]>("http://localhost:3000/recipes/")
+      .subscribe(recipes => {
+        console.log(recipes);
+        this.recipeService.setRecipes(recipes);
+      });
   }
 
 }

@@ -10,13 +10,13 @@ export class HeaderComponent {
 
   collapsed = true;
 
-  constructor(private dataStorageService:DataStorageService){}
+  constructor(private dataStorageService: DataStorageService) { }
 
   onSelect(feature: string) {
     this.featureSelected.emit(feature);
   }
 
-  onFetchData(){
+  onFetchData() {
     this.dataStorageService.fetchRecipes();
   }
 
