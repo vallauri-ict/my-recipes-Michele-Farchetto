@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  selectedSection = 'recipes';
-
-  showSection(section:string){
-    this.selectedSection = section;
-  }
-
 }

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.modules';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,6 +19,7 @@ import { RecipeService } from './recipes/recipe.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { DataStorageService } from './shared/data-storage.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +34,7 @@ import { DataStorageService } from './shared/data-storage.service';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],
