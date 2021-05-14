@@ -11,6 +11,10 @@ export class HeaderComponent {
 
   constructor(private dataStorageService: DataStorageService) { }
 
+  bgOnInit(){
+    this.onFetchData();
+  }
+
   onFetchData() {
     this.dataStorageService.fetchRecipes();
   }

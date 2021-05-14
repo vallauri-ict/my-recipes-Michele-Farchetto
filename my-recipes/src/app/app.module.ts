@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.modules';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -18,7 +18,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeService } from './recipes/recipe.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { DataStorageService } from './shared/data-storage.service';
-
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { DataStorageService } from './shared/data-storage.service';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,
